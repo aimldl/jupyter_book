@@ -103,6 +103,7 @@ jb clean --all my-book-sample
 ## 3. Publish Your Book Online
 To publish your book using GitHub Pages, you'll first need to push your book's source files to a GitHub repository.
 
+### 3-1. Create a new repository on GitHub and push the book's source files.
 - Create a new repository on GitHub, ensuring you do not initialize it with a README file.
 - Clone this repository to your local machine.
 - Copy the source files of your book into the directory you just cloned.
@@ -205,8 +206,10 @@ To https://github.com/aimldl/llm-benchmarks-asian-languages.git
 branch 'main' set up to track 'origin/main'.
 (jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$
 ```
+### 3-2. Publish the HTML version of your book using the `ghp-import` package 
+After your source files are on GitHub, you can publish the HTML version of your book using the `ghp-import` package. 
 
-After your source files are on GitHub, you can publish the HTML version of your book using the `ghp-import` package. First, you may need to install it:
+First, you may need to install it:
 
 ```Bash
 pip install ghp-import
@@ -218,4 +221,24 @@ From within your local repository's directory, run the following command to push
 ghp-import -n -p -f _build/html
 ```
 
+For example,
+
+```bash
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$ ghp-import -n -p -f _build/html
+Username for 'https://github.com': aimldl
+Password for 'https://aimldl@github.com':
+  ...
+Total 270 (delta 105), reused 269 (delta 105), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (105/105), done.
+remote: 
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+remote:      https://github.com/aimldl/llm-benchmarks-asian-languages/pull/new/gh-pages
+remote: 
+To https://github.com/aimldl/llm-benchmarks-asian-languages.git
+ * [new branch]      gh-pages -> gh-pages
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$ 
+
+```
+### 3-3. 
 Your book should then be live and accessible at a URL similar to `https://<your-username>.github.io/<your-repository-name>/`.
