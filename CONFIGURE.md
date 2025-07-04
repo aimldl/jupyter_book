@@ -120,6 +120,7 @@ Click the `Create repository` button.
     - (Optional) `cd` into this directory.
 
  ```bash
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$
 (jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ git clone https://github.com/aimldl/llm-benchmarks-asian-languages.git
 Cloning into 'llm-benchmarks-asian-languages'...
 warning: You appear to have cloned an empty repository.
