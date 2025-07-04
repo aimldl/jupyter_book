@@ -108,6 +108,19 @@ To publish your book using GitHub Pages, you'll first need to push your book's s
 - Copy the source files of your book into the directory you just cloned.
 - Commit and push these files to your remote repository on GitHub.
 
+For example,
+- Create a new repository on GitHub, ensuring you do not initialize it with a README file.
+<img src="images/create_a_new_repository_llm-benchmarks-asian-languages.png">
+
+Click the `Create repository` button.
+
+- Clone this repository to your local machine.
+
+- Copy the source files of your book into the directory you just cloned.
+
+- Commit and push these files to your remote repository on GitHub.
+
+
 After your source files are on GitHub, you can publish the HTML version of your book using the `ghp-import` package. First, you may need to install it:
 
 ```Bash
