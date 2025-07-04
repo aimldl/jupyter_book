@@ -115,6 +115,18 @@ For example,
 Click the `Create repository` button.
 
 - Clone this repository to your local machine.
+    - Go to your local machine
+    - (Optional) Create a sub-directory `github/aimldl`.
+    - (Optional) `cd` into this directory.
+
+ ```bash
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ git clone https://github.com/aimldl/llm-benchmarks-asian-languages.git
+Cloning into 'llm-benchmarks-asian-languages'...
+warning: You appear to have cloned an empty repository.
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ ls
+  ...  llm-benchmarks-asian-languages  ...
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ 
+```
 
 - Copy the source files of your book into the directory you just cloned.
 
