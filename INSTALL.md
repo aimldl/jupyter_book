@@ -87,6 +87,18 @@ jb --version
 ```
 `jb` is an alias of `jupyter-book`.
 
+For example,
+```bash
+(jupyter-book) aimldl@tkim-glinux:~$ jupyter-book --version
+Jupyter Book      : 1.0.4.post1                                                                                                                                               
+External ToC      : 1.0.1                                                                                                                                                     
+MyST-Parser       : 3.0.1                                                                                                                                                     
+MyST-NB           : 1.2.0                                                                                                                                                     
+Sphinx Book Theme : 1.1.4                                                                                                                                                     
+Jupyter-Cache     : 1.0.1                                                                                                                                                     
+NbClient          : 0.10.2                                                                                                                                                    
+(jupyter-book) aimldl@tkim-glinux:~$
+```
 
 Alternatively, you can use the `--help` flag to view the available commands.
 ```bash
