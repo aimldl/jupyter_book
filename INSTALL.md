@@ -43,11 +43,21 @@ After the installation is complete, you need to reload your shell's configuratio
 ```bash
 source ~/.bashrc
 ```
+For example,
+```bash
+aimldl@tkim-glinux:~$ source ~/.bashrc
+(base) aimldl@tkim-glinux:~$
+```
 
 ### 1-2. Create and activate a new conda environment
 ```bash
 conda create -n jupyter-book python=3 anaconda
 conda activate jupyter-book
+```
+For example,
+```bash
+(base) aimldl@tkim-glinux:~$
+(jupyter-book) aimldl@tkim-glinux:~$
 ```
 
 ### 1-3. Install Jupyter Book using the `conda-forge` channel
