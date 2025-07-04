@@ -80,8 +80,9 @@ pip install -U jupyter-book
 ```bash
 jupyter-book --version
 ```
-or
+
 ```bash
+# or
 jb --version
 ```
 `jb` is an alias of `jupyter-book`.
@@ -91,8 +92,9 @@ Alternatively, you can use the `--help` flag to view the available commands.
 ```bash
 jupyter-book --help
 ```
-or
+
 ```bash
+# or
 jb --help
 ```
 
