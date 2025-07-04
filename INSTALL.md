@@ -56,8 +56,13 @@ conda activate jupyter-book
 ```
 For example,
 ```bash
-(base) aimldl@tkim-glinux:~$
+(base) aimldl@tkim-glinux:~$ conda activate jupyter-book
 (jupyter-book) aimldl@tkim-glinux:~$
+```
+                                                                                                                                                     
+To deactivate an active environment, run:                                                                                                                                    
+```bash                                                                                                                                     
+conda deactivate 
 ```
 
 ### 1-3. Install Jupyter Book using the `conda-forge` channel
