@@ -206,6 +206,10 @@ To https://github.com/aimldl/llm-benchmarks-asian-languages.git
 branch 'main' set up to track 'origin/main'.
 (jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$
 ```
+The `main` branch should look similar to:
+
+<img src="images/remote_repository_with_source_codes.png">
+
 ### 3-2. Publish the HTML version of your book using the `ghp-import` package 
 After your source files are on GitHub, you can publish the HTML version of your book using the `ghp-import` package. 
 
@@ -240,5 +244,9 @@ To https://github.com/aimldl/llm-benchmarks-asian-languages.git
 (jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$ 
 
 ```
-### 3-3. 
+### 3-3. Check the published result
 Your book should then be live and accessible at a URL similar to `https://<your-username>.github.io/<your-repository-name>/`.
+
+For example, navigate to https://aimldl.github.io/llm-benchmarks-asian-languages.
+
+<img src="images/welcome_to_your_jupyter_book.png">
