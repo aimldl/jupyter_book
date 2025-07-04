@@ -75,8 +75,19 @@ Alternatively, you can install it using pip:
 ```bash
 pip install -U jupyter-book
 ```
+### 1-4. Verify the installation of Jupyter Book 
 
-To view the available commands, you can use the `--help` flag.
+```bash
+jupyter-book --version
+```
+or
+```bash
+jb --version
+```
+`jb` is an alias of `jupyter-book`.
+
+
+Alternatively, you can use the `--help` flag to view the available commands.
 ```bash
 jupyter-book --help
 ```
@@ -84,8 +95,6 @@ or
 ```bash
 jb --help
 ```
-`jb` is an alias of `jupyter-book`.
-
 
 
 
