@@ -129,10 +129,82 @@ warning: You appear to have cloned an empty repository.
 (jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ 
 ```
 
-- Copy the source files of your book into the directory you just cloned.
+Currently, the repository is empty.
+```bash
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ tree llm-benchmarks-asian-languages/
+llm-benchmarks-asian-languages/
 
+0 directories, 0 files
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ 
+```
+
+- Copy the source files of your book into the directory you just cloned.
+To verify, run the `tree` command again.
+```bash
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ tree llm-benchmarks-asian-languages/
+llm-benchmarks-asian-languages/
+├── _build
+│   ├── html
+│   │   ├── _images
+│   │   │   └── e8d5d74c8d69bbb9dbe6c406bf505595d9e05ff6163624496c49d8d6fff87a07.png
+│   │   ├── _sources
+│   │   │   ├── intro.md
+│   │   │   ├── markdown-notebooks.md
+│   │   │   ├── markdown.md
+│   │   │   └── notebooks.ipynb
+  ...
+├── _config.yml
+├── _toc.yml
+├── intro.md
+├── logo.png
+├── markdown-notebooks.md
+├── markdown.md
+├── notebooks.ipynb
+├── references.bib
+└── requirements.txt
+
+108 directories, 175 files
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$
+```
 - Commit and push these files to your remote repository on GitHub.
 
+```bash
+cd llm-benchmarks-asian-languages/
+git add .
+git commit -m "The first commit to push my book sample to the remote repository"
+git push -u origin main
+```
+For example,
+
+```bash
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl$ cd llm-benchmarks-asian-languages/
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$ git add .
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$ git commit -m "The first commit to push my book sample to the remote repository"
+  ...
+ 181 files changed, 13271 insertions(+)
+ create mode 100644 _build/.doctrees/environment.pickle
+ create mode 100644 _build/.doctrees/intro.doctree
+  ...
+ create mode 100644 _config.yml
+ create mode 100644 _toc.yml
+ create mode 100644 intro.md
+ create mode 100644 logo.png
+ create mode 100644 markdown-notebooks.md
+ create mode 100644 markdown.md
+ create mode 100644 notebooks.ipynb
+ create mode 100644 references.bib
+ create mode 100644 requirements.txt
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$ git push -u origin main
+Username for 'https://github.com': aimldl
+Password for 'https://aimldl@github.com':
+  ...
+Total 283 (delta 74), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (74/74), done.
+To https://github.com/aimldl/llm-benchmarks-asian-languages.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+(jupyter-book) aimldl@tkim-glinux:~/github/aimldl/llm-benchmarks-asian-languages$
+```
 
 After your source files are on GitHub, you can publish the HTML version of your book using the `ghp-import` package. First, you may need to install it:
 
