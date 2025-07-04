@@ -250,3 +250,5 @@ Your book should then be live and accessible at a URL similar to `https://<your-
 For example, navigate to https://aimldl.github.io/llm-benchmarks-asian-languages.
 
 <img src="images/welcome_to_your_jupyter_book.png">
+
+Bingo!
