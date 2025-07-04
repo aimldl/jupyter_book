@@ -120,4 +120,4 @@ From within your local repository's directory, run the following command to push
 ghp-import -n -p -f _build/html
 ```
 
-Your book should then be live and accessible at a URL similar to `https://<your-username>.github.io/<your-repository-name>/`().
+Your book should then be live and accessible at a URL similar to `https://<your-username>.github.io/<your-repository-name>/`.
