@@ -92,12 +92,12 @@ Or paste this line directly into your browser bar:
 If you make changes such as removing files or altering the table of contents, it is a good practice to clean the build artifacts before rebuilding. You can remove just the HTML output with:
 
 ```Bash
-jb clean --html my-first-book
+jb clean --html my-book-sample
 ```
 Or to remove the entire `_build` directory, use:
 
 ```Bash
-jb clean --all my-first-book
+jb clean --all my-book-sample
 ```
 
 ## 3. Publish Your Book Online
@@ -114,15 +114,10 @@ After your source files are on GitHub, you can publish the HTML version of your 
 pip install ghp-import
 ```
 
-From within your local repository's directory, run the following command to push the contents of the 
+From within your local repository's directory, run the following command to push the contents of the `_build/html` folder to the `gh-pages` branch:
 
-_build/html folder to the gh-pages branch:
-
-Bash
-
+```Bash
 ghp-import -n -p -f _build/html
+```
 
-
-Your book should then be live and accessible at a URL similar to 
-
-https://<your-username>.github.io/<your-repository-name>/.
+Your book should then be live and accessible at a URL similar to `https://<your-username>.github.io/<your-repository-name>/`().
